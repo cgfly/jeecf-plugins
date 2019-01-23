@@ -13,7 +13,7 @@ public class JavaHelper {
     /**
      * 获取简单的字段类型
      * 
-     * @param jdbcType
+     * @param simpleJdbcType
      * @return
      */
     public String getSimpleType(String simpleJdbcType) {
@@ -24,7 +24,7 @@ public class JavaHelper {
     /**
      * 获取字段类型
      * 
-     * @param jdbcType
+     * @param simpleJdbcTtpe
      * @return
      */
     public String getType(String simpleJdbcTtpe) {

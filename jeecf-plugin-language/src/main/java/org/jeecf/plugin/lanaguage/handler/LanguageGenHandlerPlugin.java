@@ -15,7 +15,6 @@ import org.jeecf.plugin.lanaguage.helper.JavaHelper;
  */
 public class LanguageGenHandlerPlugin implements GenHandlerPlugin {
 
-
     private static JavaHelper JAVA_HELPER = new JavaHelper();
 
     @Override
@@ -25,9 +24,11 @@ public class LanguageGenHandlerPlugin implements GenHandlerPlugin {
     @Override
     public PluginResponse process(PluginRequest request) {
         PluginResponse response = new PluginResponse();
-        int language = (int) request.getAttribute("language");
-        if (LanguageEnum.JAVA.getCode() == language) {
-            response.setAttribute("JavaHelper",JAVA_HELPER);
+        Integer language = (Integer) request.getAttribute("language");
+        if (language != null) {
+            if (LanguageEnum.JAVA.getCode() == language) {
+                response.setAttribute("JavaHelper", JAVA_HELPER);
+            }
         }
         return response;
     }

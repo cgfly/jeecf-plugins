@@ -1,6 +1,6 @@
 package org.jeecf.plugin.lanaguage.handler;
 
-import org.jeecf.common.gen.enums.LanguageEnum;
+import org.jeecf.osgi.enums.LanguageEnum;
 import org.jeecf.osgi.model.BoundleContext;
 import org.jeecf.osgi.model.PluginRequest;
 import org.jeecf.osgi.model.PluginResponse;
